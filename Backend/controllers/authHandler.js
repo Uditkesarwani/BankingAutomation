@@ -220,6 +220,8 @@ const Login = async (req, res) => {
   process.env.JWT_SECRET,
   { expiresIn: "2d" }
 );
+
+
     
     res.cookie("token", token, {
       httpOnly: true,
