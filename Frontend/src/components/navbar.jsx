@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Outlet, Link, useLocation, useNavigate } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-
+import { host } from "../host";
 const Navbar = () => {
   const [user, setUser] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +22,7 @@ const Navbar = () => {
     if (!user) return;
 
     try {
-      const res = await fetch("http://localhost:5000/api/auth/logout", {
+      const res = await fetch(`${host}/api/auth/logout`, {
         method: "GET",
         credentials: "include",
       });
