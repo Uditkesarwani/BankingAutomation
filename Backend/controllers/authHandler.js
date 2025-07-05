@@ -125,7 +125,10 @@ const Logout = async (req, res) => {
       httpOnly: true,
       secure: true,
       sameSite: "None",
+      domain: ".onrender.com"
     });
+
+  
 
     res.status(200).json({
       success: true,
