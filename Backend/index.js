@@ -24,8 +24,8 @@ app.use(cookieParser());
 
 // ✅ CORS Configuration
 app.use(cors({
-    origin: "http://localhost:5173",  // ✅ Your frontend URL
-    credentials: true  // ✅ Important for cookies
+    origin:"https://bankingautomation.onrender.com", // ✅ Correct frontend origin
+    credentials: true
 }));
 
 
