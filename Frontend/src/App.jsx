@@ -5,7 +5,7 @@ import UserTransactions from "./user/UserTransactions";
 import Transfer from "./user/transfer";
 import Services from "./user/services";
 import Contact from "./user/contact";
-import Detail from "./user/Detail";
+import Detail from "./user/detail";
 import Profile from "./user/profile";
 import AccountCreated from "./user/AccountCreated";
 
